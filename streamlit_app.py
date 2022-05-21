@@ -10,6 +10,6 @@ streamlit.text(" 🥗 Kale,Spanish,Rocket Smoothie")
 streamlit.text(" 🐔 Eggs boiled")
 streamlit.text("🥑🍞 Avacado tost")
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
-stremlit.multiselect("Pick some fruits:",list(my_fruit_list.index))
+streamlit.multiselect("Pick some fruits:",list(my_fruit_list.index))
 streamlit.dataframe(my_fruit_list)
 
