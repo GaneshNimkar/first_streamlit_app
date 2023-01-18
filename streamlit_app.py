@@ -23,7 +23,7 @@ streamlit.write('The user entered ', fruit_choice)
 streamlit.header("Fruityvice Fruit Advice!")
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
-streamlit.text(fruityvice_response.json())
+
 # Normalize JSON 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Create dataframe
@@ -40,3 +40,5 @@ streamlit.dataframe(my_data_row)
 
 fruit_add = streamlit.text_input('What fruit would you like to add?','Kiwi')
 streamlit.write('Thanks for adding ', fruit_add)
+
+my_cur.execute("INSERT INTO fruit_load_list VALUES("From stream")")
